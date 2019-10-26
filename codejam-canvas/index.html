@@ -11,7 +11,73 @@
 </head>
 
 <body>
-    <canvas id="main-canvas" class="main-canvas"></canvas>
+    <header class="header">
+        <button class="menu-button">
+      </button>
+        <h1>CodeJam - Pallete</h1>
+        <button class="options-button">
+          </button>
+    </header>
+    <main class="workspace">
+        <div class="tools-group">
+            <div class="tools button-list">
+                <div class="item">
+                    <div class="item-icon bucket"></div>
+                    <span class="item-text">Paint bucket</span>
+                </div>
+                <div class="item">
+                    <div class="item-icon picker"></div>
+                    <span class="item-text">Choose color</span>
+                </div>
+                <hr>
+                <div class="item">
+                    <div class="item-icon move"></div>
+                    <span class="item-text">Move</span>
+                </div>
+                <div class="item">
+                    <div class="item-icon arrows"></div>
+                    <span class="item-text">Transform</span>
+                </div>
+            </div>
+            <div class="tools button-list">
+                <div class="item">
+                    <div class="item-icon color gray"></div>
+                    <span class="item-text">Current color</span>
+                </div>
+                <div class="item">
+                    <div class="item-icon color green"></div>
+                    <span class="item-text">Prev color</span>
+                </div>
+                <hr>
+                <div class="item">
+                    <div class="item-icon color red"></div>
+                    <span class="item-text">red</span>
+                </div>
+                <div class="item">
+                    <div class="item-icon color blue"></div>
+                    <span class="item-text">blue</span>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="main-canvas" class="main-canvas"></canvas>
+        <div class="button-list">
+            <div class="item" id="4">
+                <div class="item-icon size"></div>
+                <span class="item-text">4x4</span>
+            </div>
+            <div class="item" id="32">
+                <div class="item-icon size"></div>
+                <span class="item-text">32x32</span>
+            </div>
+            <div class="item" id="512">
+                <div class="item-icon size"></div>
+                <span class="item-text">512x512</span>
+            </div>
+        </div>
+    </main>
+
+
     <script src="script.js"></script>
 </body>
 

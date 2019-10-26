@@ -1,7 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .main-canvas {
+    display: block;
+    image-rendering: pixelated;
     width: 100%;
     height: 100%;
     max-width: 512px;
     max-height: 512px;
-    background-color: violet;
+    outline: 1px solid grey;
+}
+
+.button-list {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    height: fit-content;
+}
+
+.button-list hr {
+    width: 100%;
+}
+
+.tools {
+    width: 228px;
+    height: 246px;
+}
+
+.tools-group {
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.header {
+    width: 100%;
+    height: 48px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0;
+    margin-left: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.menu-button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url("./assets/images/menu.svg") center no-repeat;
+    margin-left: 8px;
+}
+
+.options-button {
+    margin-top: 12px;
+    float: right;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url("./assets/images/dots.svg") center no-repeat;
+    margin-right: 8px;
+}
+
+.workspace {
+    margin-top: 79px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    cursor: pointer;
+    width: auto;
+    height: 48px;
+    margin: 8px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.item:active {
+    background: grey;
+}
+
+.item:hover {
+    outline: 1px solid grey;
+}
+
+.item-icon {
+    margin-left: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.item-icon.color {
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.item-text {
+    margin-left: 33px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.541327);
+}
+
+.bucket {
+    background: url("./assets/images/bucket.svg") center no-repeat;
+}
+
+.picker {
+    background: url("./assets/images/pick.svg") center no-repeat;
+}
+
+.move {
+    background: url("./assets/images/move.svg") center no-repeat;
+}
+
+.arrows {
+    background: url("./assets/images/arrows.svg") center no-repeat;
+}
+
+.size {
+    background: url("./assets/images/resize.svg") center no-repeat;
+}
+
+.red {
+    background: #F74141;
+}
+
+.blue {
+    background: #41B6F7;
+}
+
+.green {
+    background: #41F795;
+}
+
+.gray {
+    background: #C4C4C4;
 }
